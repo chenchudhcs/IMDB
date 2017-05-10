@@ -24,12 +24,12 @@ class BatmanContainer extends React.Component {
     }
 
     getListOfMovies() {
-        console.log("response", this.props.batsmanMovies);
+        // console.log("response", this.props.batsmanMovies);
         return this.props.batsmanMovies || [];
     }
 
     onClickBatmanHandler(e, imdbID) {
-        console.log("BatmanContainer:  onClickBatmanHandler: imdbId", imdbID);
+        // console.log("BatmanContainer:  onClickBatmanHandler: imdbId", imdbID);
         e.preventDefault();
         this.setState({ movieId: imdbID });
     }

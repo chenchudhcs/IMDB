@@ -19,12 +19,12 @@ export function fetchMovies() {
     return function (dispatch) {
         axios.get(URL.MOVIES)
             .then(res => {
-            console.log("response for fetchMovies Action ", res.data);
+            // console.log("response for fetchMovies Action ", res.data);
         dispatch(receiveActiveAd(res.data.Search));
 
     })
         .catch((err) => {//error
-            console.log("error in fetchMovies Action :  ", err);
+             console.log("error in fetchMovies Action :  ", err);
 
     });
     }

@@ -7,7 +7,7 @@ import {BATMAN_MOVIES} from "../constants/actionTypes";
 const INITIAL_STATE = {movies: []};
 
 export default function (state = INITIAL_STATE, action) {
-console.log("in reducer",action.payload);
+// console.log("in reducer",action.payload);
 
     switch (action.type) {
         case BATMAN_MOVIES:
