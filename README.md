@@ -5,7 +5,7 @@ First, install the dependencies.
 npm install
 ```
 
-To build and serve the project locally at localhost:6060, run:
+To build and serve the project locally at localhost:8080, run:
 
 ```
 npm start

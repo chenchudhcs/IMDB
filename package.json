@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sravanithota/IMDBMoviesAPI_React_Wth_Redux.git"
+    "url": "https://github.com/sravanithota/IMDBMovies_React_Wth_Redux_App.git"
   },
   "devDependencies": {
     "babel": "^6.5.2",
