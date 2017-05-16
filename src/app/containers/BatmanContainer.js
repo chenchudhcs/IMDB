@@ -36,11 +36,10 @@ class BatmanContainer extends React.Component {
     }
 
     renderPosters({ Poster, Title, Year, imdbID }) {
-        UrlHelper.convertUrlToHttps(Poster);
         // console.log("renderPosters:",UrlHelper.convertUrlToHttps(Poster));
         return <div className="flex-item">
             <a target="_blank" onClick={(e) => (this.onClickBatmanHandler(e, imdbID))}>
-                <img src={Poster} alt="Batman" width="200" height="200"/>
+                <img src={UrlHelper.convertUrlToHttps(Poster)} alt="Batman" width="200" height="200"/>
             </a>
             <div className="desc">{Title} {Year}</div>
         </div>
