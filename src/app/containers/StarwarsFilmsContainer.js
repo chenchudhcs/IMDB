@@ -21,7 +21,7 @@ class StarwarsFilmsContainer extends React.Component {
 
     renderFilms() {
         return this.getFilms().map((film, i) => {
-            console.log("StarwarsFilmsContainer : renderFilms ", film.title);
+            // console.log("StarwarsFilmsContainer : renderFilms ", film.title);
 
             return (
                 <ul className="list-group " key={i}>
@@ -36,7 +36,7 @@ class StarwarsFilmsContainer extends React.Component {
 
 
     render() {
-        console.log("StarwarsFilmsContainer: API response", this.props.starwarsFilms);
+        // console.log("StarwarsFilmsContainer: API response", this.props.starwarsFilms);
         return (
             <div className="container-fluid filmspage">
                 <div className="row">
