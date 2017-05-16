@@ -20,7 +20,8 @@ export class Header extends React.Component {
                         <div className="collapse navbar-collapse" id="myNavbar">
                             <ul className="nav navbar-nav navbar-right">
                                 <li><Link to={""}>Home</Link></li>
-                                <li><Link to={"/movies"}>Movies</Link></li>
+                                <li><Link to={"/movies"}>BatmanSeries</Link></li>
+                                <li><Link to={"/starwarsfilms"}>Starwars</Link></li>
                             </ul>
                         </div>
                     </div>
