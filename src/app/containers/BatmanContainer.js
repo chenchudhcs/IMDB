@@ -5,6 +5,7 @@ import {fetchMovies} from "../actions/BatmanMovieAction";
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
+import UrlHelper from "../helpers/urlHelper";
 
 import {VideoComponent} from "../components/VideoComponent"
 
@@ -35,6 +36,8 @@ class BatmanContainer extends React.Component {
     }
 
     renderPosters({ Poster, Title, Year, imdbID }) {
+        UrlHelper.convertUrlToHttps(Poster);
+        // console.log("renderPosters:",UrlHelper.convertUrlToHttps(Poster));
         return <div className="flex-item">
             <a target="_blank" onClick={(e) => (this.onClickBatmanHandler(e, imdbID))}>
                 <img src={Poster} alt="Batman" width="200" height="200"/>
