@@ -75,7 +75,7 @@ BatmanContainer.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-    return {batsmanMovies: state.batsmanMovies.movies[0]}
+    return {batsmanMovies: state.batsmanMovies.movies}
 };
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({fetchMovies}, dispatch)

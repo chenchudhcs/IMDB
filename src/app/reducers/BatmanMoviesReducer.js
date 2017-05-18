@@ -12,10 +12,8 @@ export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case BATMAN_MOVIES:
             return {
-                ...state,
-                movies: [
-                    ...state.movies, action.payload
-                ]
+                movies: action.payload
+
             };
 
         default:

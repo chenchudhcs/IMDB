@@ -1,6 +1,4 @@
-/**
- * Created by Sravani on 4/19/2017.
- */
+
 import axios from 'axios';
 import React from "react";
 import {BATMAN_MOVIES} from "../constants/actionTypes"

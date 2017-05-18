@@ -9,7 +9,6 @@ export default function (state = INITIAL_STATE, action) {
 
         case STARWARS_FILMS:
             return {
-                state,
                 films: [
                     action.payload.results
                 ]
