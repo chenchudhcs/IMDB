@@ -5,14 +5,13 @@ import {fetchMovies} from "../actions/BatmanMovieAction";
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
-import UrlHelper from "../helpers/urlHelper";
 
 import {VideoComponent} from "../components/VideoComponent"
 
 class BatmanContainer extends React.Component {
     constructor(props) {
         super(props);
-        this.onClickBatmanHandler =  this.onClickBatmanHandler.bind(this);
+        this.onClickBatmanHandler = this.onClickBatmanHandler.bind(this);
         this.state = {
             movieId: "default"
         };
@@ -25,34 +24,30 @@ class BatmanContainer extends React.Component {
     }
 
     getListOfMovies() {
-        // console.log("response", this.props.batsmanMovies);
+        // console.log("batmancontainer: response", this.props.batsmanMovies);
         return this.props.batsmanMovies || [];
     }
 
     onClickBatmanHandler(e, imdbID) {
         // console.log("BatmanContainer:  onClickBatmanHandler: imdbId", imdbID);
         e.preventDefault();
-        this.setState({ movieId: imdbID });
+        this.setState({movieId: imdbID});
     }
 
-    renderPosters({ Poster, Title, Year, imdbID }) {
-        //UrlHelper.convertUrlToHttps(Poster)
-        // console.log("renderPosters:",UrlHelper.convertUrlToHttps(Poster));
-        return <div className="flex-item">
-            <a target="_blank" onClick={(e) => (this.onClickBatmanHandler(e, imdbID))}>
-                <img src={Poster} alt="Batman" width="200" height="200"/>
-            </a>
-            <div className="desc">{Title} {Year}</div>
-        </div>
-    }
 
     renderMovies() {
         return this.getListOfMovies().map((movie, i) => {
             return (
-                <div className="row">
-                    <div key={i}>
-                        {this.renderPosters(movie)}
+                <div key={i} className="row">
+                    <div className="col-xs-6 movievideo">
+                        <a target="_blank" onClick={(e) => (this.onClickBatmanHandler(e, movie.id))}>
+                            <img src={movie.Post} height="150px" width="200px" alt="Batman"/>
+                        </a>
                     </div>
+                    <div className="col-xs-6 movietitle">
+                        <div className="desc">{movie.Title} {movie.Year}</div>
+                    </div>
+                    <br/>
                 </div>
             );
         });
@@ -61,14 +56,22 @@ class BatmanContainer extends React.Component {
     render() {
         return (
             <div>
-                <div className="video"><VideoComponent movieId={this.state.movieId}/></div>
-                <div className="flex-container">
-                    {this.renderMovies()}
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-xs-9 video embed-responsive-item"><VideoComponent
+                            movieId={this.state.movieId}/></div>
+                        <div className="col-xs-3  movievideolist">
+                            {this.renderMovies()}
+                        </div>
+                    </div>
                 </div>
             </div>
         );
+
     }
+
 }
+
 BatmanContainer.propTypes = {
 
     batsmanMovies: PropTypes.array

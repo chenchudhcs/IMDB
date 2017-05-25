@@ -66,10 +66,30 @@ div.desc {
 }
 
 .video {
-  background: fixed no-repeat left top;
-  position: fixed;
-
+  background: fixed no-repeat;
+  padding-top: 15px;
+  clear: left;
+  position:static;
 }
+
+.movietitle {
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  clear: both;
+}
+
+.movievideo {
+  padding: 10px 0 20px 0;
+  clear: right;
+  opacity: 0.8;
+  position: relative;
+}
+
+.movievideo:hover {
+  opacity: 1;
+}
+
 
 .footer {
   bottom: 0;
@@ -77,7 +97,6 @@ div.desc {
   align-content: center !important;
 }
 
-//starwars
 .filmspage {
   padding-top: 20px;
 }
