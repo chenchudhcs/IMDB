@@ -12,19 +12,19 @@ export class Home extends React.Component {
                 <Carousel>
                     <Carousel.Item>
 
-                        <img width={1400} height={700} alt="900x500" src={'https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/spiderman.jpg'}/>
+                        <img width={1400} height={700} alt="900x500" src={'https://s3-us-west-1.amazonaws.com/imdbproject/spiderman.jpg'}/>
                         <Carousel.Caption>
                             <h3>Spider Man</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img width={1400} height={700} alt="900x500" src={'https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/zootopiagood.jpg'}/>
+                        <img width={1400} height={700} alt="900x500" src={'https://s3-us-west-1.amazonaws.com/imdbproject/zootopiagood.jpg'}/>
                         <Carousel.Caption>
                             <h3>Zootopia</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img width={1400} height={700} alt="900x500" src={'https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/frozen.jpg'}/>
+                        <img width={1400} height={700} alt="900x500" src={'https://s3-us-west-1.amazonaws.com/imdbproject/frozen.jpg'}/>
                         <Carousel.Caption>
                             <h3>Frozen</h3>
                         </Carousel.Caption>
@@ -37,7 +37,7 @@ export class Home extends React.Component {
                 </div>
                 <div className="container-fluid bg-2 text-center">
                     <br/><br/>
-                    <img src={'https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/IMDB.PNG'} className="img-responsive img-circle margin grow" style={divStyle} alt="MoviesList" width="350" height="350"/>
+                    <img src={'https://s3-us-west-1.amazonaws.com/imdbproject/IMDB.PNG'} className="img-responsive img-circle margin grow" style={divStyle} alt="MoviesList" width="350" height="350"/>
                     <br/><br/>
                     <br/>
                 </div>
@@ -46,15 +46,15 @@ export class Home extends React.Component {
                     <div className="row">
                         <div className="col-sm-4">
                             <p>The Azure Angel II was a modified Jedi Delta-7 Aethersprite-class light interceptor piloted by Anakin Skywalker during the Clone Wars.</p>
-                            <img src={'https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/Zootopia.jpg'} className="img-responsive margin"  alt="Image"/>
+                            <img src={'https://s3-us-west-1.amazonaws.com/imdbproject/Zootopia.jpg'} className="img-responsive margin"  alt="Image"/>
                         </div>
                         <div className="col-sm-4">
                             <p>The Corellian Corvette Tantive IV, sometimes identified as a blockade runner, is the first ship to appear in Star Wars. Darth Vader (David Prowse) and his stormtroopers capture the ship and its crew.</p>
-                            <img src={'https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/deadpool.jpg'} className="img-responsive margin" alt="Image"/>
+                            <img src={'https://s3-us-west-1.amazonaws.com/imdbproject/deadpool.jpg'} className="img-responsive margin" alt="Image"/>
                         </div>
                         <div className="col-sm-4">
                             <p>A modified Cokgjhrellian HWK-290 used by Kyle Katarn and Jan Ors in the Star Wars: Dark Forces and Star Wars: Dark Forces II: Jedi Knight video games.</p>
-                            <img src={'https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/Zootopia1.jpg'} className="img-responsive margin"  alt="Image"/>
+                            <img src={'https://s3-us-west-1.amazonaws.com/imdbproject/Zootopia1.jpg'} className="img-responsive margin"  alt="Image"/>
                         </div>
                     </div>
 

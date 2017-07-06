@@ -45,7 +45,7 @@ class StarwarsFilmsContainer extends React.Component {
                     </div>
                     <div className="col-sm-6 ">
                         <br/>
-                        <img src="https://s3-us-west-2.amazonaws.com/imdbrepository/imdb/starwars.jpg" className="img-responsive margin swing" style={{display:"inline"}} alt="MoviesList" width="350" height="350"/>
+                        <img src="https://s3-us-west-1.amazonaws.com/imdbproject/starwars.jpg" className="img-responsive margin swing" style={{display:"inline"}} alt="MoviesList" width="350" height="350"/>
                     </div>
                 </div>
             </div>
